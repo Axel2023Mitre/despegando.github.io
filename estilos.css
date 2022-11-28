@@ -1,0 +1,115 @@
+#aviones{
+    border-radius: 50%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    left: 0;
+    top: 500px;
+    width: 0px;
+    height: 0px;
+    z-index: 1;
+    animation: despegue 30s infinite forwards;
+}
+
+#aviones2{
+    border-radius: 50%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100;
+    left: 10000;
+    top: 50px;
+    width: 1000;
+    height: 10000px;
+    z-index: 2;
+    animation: aterisaje 10s infinite forwards;
+}
+
+#avion3{
+    border-radius: 50%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    left: 0;
+    top: 500px;
+    width: 0px;
+    height: 0px;
+    z-index: 1;
+    animation: despegue2 15s infinite forwards;
+}
+
+#avion4{
+    border-radius: 50%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 600;
+    left: 600000;
+    top: 600px;
+    width: 500;
+    height: 1000px;
+    z-index: 1;
+    animation: despegue3 20s infinite forwards;
+}
+
+@keyframes despegue{
+    from{
+        transform: translateX(0px);
+    }
+
+    25%{left: 1900px; top: 0px;}
+    50%{left: 0px; top: 700px;}
+    75%{left: 0px; top: 800px;}
+    100%{left: 0px; top: 900px;}
+
+    to{
+        transform: translateX(9000px);
+    }
+}
+
+@keyframes aterisaje{
+    from{
+        transform: translateX(9000px);
+    }
+
+    25%{left: 0px; top: 5900px;}
+    50%{left: 0px; top: 200px;}
+    75%{left: 0px; top: 500px;}
+    100%{left: 0px; top: 900px;}
+
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes despegue2{
+    from{
+        transform: translateX(0px);
+    }
+
+    25%{left: 190px; top: 0px;}
+    50%{left: 0px; top: 500px;}
+    75%{left: 0px; top: 500px;}
+    100%{left: 0px; top: 900px;}
+
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes despegue3{
+    from{
+        transform: translateX(3000px);
+    }
+
+    25%{left: 90000px; top: 1000px;}
+    50%{left: 700px; top: 900px;}
+    75%{left: 700px; top: 80px;}
+    100%{left: 0px; top: 1000px;}
+
+    to{
+        transform: translateX(0px);
+    }
+}
